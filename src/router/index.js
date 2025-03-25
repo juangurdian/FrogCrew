@@ -7,6 +7,7 @@ import RequestShiftExchange from '../views/RequestShiftExchange.vue'
 import AcceptRejectShiftExchange from '../views/AcceptRejectShiftExchange.vue'
 import CrewListPage from '../views/CrewList.vue'
 import GameSchedule from '../views/GameSchedule.vue'
+import OtherCrewProfile from '../views/OtherCrewProfile.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -16,7 +17,8 @@ const routes = [
   { path: '/shift-exchange', name: 'RequestShiftExchange', component: RequestShiftExchange },
   { path: '/shift-response', name: 'AcceptRejectShiftExchange', component: AcceptRejectShiftExchange },
   { path: '/crew', name: 'CrewList', component: CrewListPage },
-  { path: '/game-schedule', name: 'GameSchedule', component: GameSchedule }
+  { path: '/game-schedule', name: 'GameSchedule', component: GameSchedule },
+  { path: '/crew-profile/:id', name: 'OtherCrewProfile', component: OtherCrewProfile }
   
 ]
 
