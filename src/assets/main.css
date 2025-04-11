@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-tcu-purple text-white px-4 py-2 rounded-lg hover:bg-tcu-purple-dark transition-colors;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow;
+  }
+}
+
+/* Custom utility classes */
+.bg-tcu-purple {
+  background-color: #4d2e7d;
+}
+
+.text-tcu-purple {
+  color: #4d2e7d;
+}
+
+.ring-tcu-purple {
+  --tw-ring-color: #4d2e7d;
+} 
